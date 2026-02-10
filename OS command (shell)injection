@@ -7,7 +7,7 @@
 ## 2. Разведка (Reconnaissance)
 При анализе карточки товара был обнаружен функционал "Check stock", который отправляет POST-запрос с параметрами productId и storeId.
 
-![Описание товара](screenshots/OS inj1.png)
+![Описание товара](https://github.com/nxbxdy-c-me/screenshots/blob/ac2a08959347a44d3d14e9eb35d66934e7f15581/OS%20inj1.png)
 
 ## 3. Анализ и Вектор атаки (Analysis)
 Сервер использует значение storeId как аргумент для запуска внутренней системной команды. Для проверки вводим спецсимвол конвейера (pipe) или разделитель команд.
@@ -19,13 +19,13 @@ POST /product/stock HTTP/1.1
 productId=1&storeId=1
 
 Перехватываем запрос через burpsuite
-![request](screenshots/OS inj2.png)
+![request](https://github.com/nxbxdy-c-me/screenshots/blob/ac2a08959347a44d3d14e9eb35d66934e7f15581/OS%20inj2%20.png)
 
 Добавляем в поле storeId=1 пайп " | " и затем команду "whoami"
-![edit request](screenshots/OS inj3.png)
+![edit request](https://github.com/nxbxdy-c-me/screenshots/blob/ac2a08959347a44d3d14e9eb35d66934e7f15581/OS%20inj3.png)
 
 После отправки модифицированного запроса сервер выполнил команду и вернул результат выполнения в теле HTTP-ответа.
-![response](screenshots/OS inj4.png)
+![response](https://github.com/nxbxdy-c-me/screenshots/blob/ac2a08959347a44d3d14e9eb35d66934e7f15581/OS%20inj4.png)
 
 ## Заключение
 Данная уязвимость возникает из-за отсутствия фильтрации входных данных перед их передачей в командную оболочку (shell).

@@ -18,7 +18,7 @@
 
 ![reqs](https://raw.githubusercontent.com/nxbxdy-c-me/screenshots/refs/heads/main/rce3.png)
 
-Создаём на своём рабочем столе тип файла .php и прописываем туда скрипт "<?php echo file_get_contents('/home/carlos/secret'); ?>"
+Создаём на своём рабочем столе тип файла .php и прописываем туда скрипт.
 
 ![script](https://github.com/nxbxdy-c-me/screenshots/blob/main/rce4.png)
 

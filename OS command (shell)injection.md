@@ -18,12 +18,15 @@ POST /product/stock HTTP/1.1
 productId=1&storeId=1
 
 Перехватываем запрос через burpsuite
+
 ![request](https://raw.githubusercontent.com/nxbxdy-c-me/screenshots/refs/heads/main/OS%20inj2%20.png)
 
 Добавляем в поле storeId=1 пайп " | " и затем команду "whoami"
+
 ![edit request](https://raw.githubusercontent.com/nxbxdy-c-me/screenshots/refs/heads/main/OS%20inj3.png)
 
 После отправки модифицированного запроса сервер выполнил команду и вернул результат выполнения в теле HTTP-ответа.
+
 ![response](https://raw.githubusercontent.com/nxbxdy-c-me/screenshots/refs/heads/main/OS%20inj4.png)
 
 ## Заключение

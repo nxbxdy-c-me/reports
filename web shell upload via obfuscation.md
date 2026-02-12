@@ -20,7 +20,7 @@
 
 ![error](https://raw.githubusercontent.com/nxbxdy-c-me/screenshots/refs/heads/main/web4.png)
 
-POST запрос также перехватываем и кидаем в Repeater, там добавляем нулевой байт (%00) к имени файла, сервер отрежет часть после нулевого байта при сохранении.
+POST запрос с ошибкой также перехватываем и кидаем в Repeater, там добавляем нулевой байт (%00) к имени файла, сервер отрежет часть после нулевого байта при сохранении.
 
 ![upload3](https://raw.githubusercontent.com/nxbxdy-c-me/screenshots/refs/heads/main/web5.png)
 

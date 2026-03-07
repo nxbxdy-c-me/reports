@@ -7,6 +7,10 @@
 
 Выявление и деконструкция вредоносного документа OOXML (.docx), распространяемого через Telegram под видом NDA от компании "Cycura". Атака была направлена на ИТ-специалистов площадки Хабр Карьера.
 
+![fake-vac](https://raw.githubusercontent.com/nxbxdy-c-me/screenshots/refs/heads/main/cycura-fake-tg1.png)
+
+![fake-tg](https://raw.githubusercontent.com/nxbxdy-c-me/screenshots/refs/heads/main/cycura-fake-tg.png)
+
 Ход анализа
 
 Статический анализ (Ручной)
